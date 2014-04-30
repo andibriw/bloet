@@ -3,6 +3,7 @@
   <persistence-unit name="com.mycompany_sportsplanner5000_jar_1.0-SNAPSHOTPU" transaction-type="RESOURCE_LOCAL">
     <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
     <class>ch.fhnw.sportsplanner5000.domain.Person</class>
+    <class>ch.fhnw.sportsplanner5000.domain.Team</class>
     <properties>
       <property name="javax.persistence.jdbc.url" value="jdbc:derby://localhost:1527/esae"/>
       <property name="javax.persistence.jdbc.user" value="esae"/>
