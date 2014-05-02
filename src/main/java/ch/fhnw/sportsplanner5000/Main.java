@@ -13,6 +13,6 @@ package ch.fhnw.sportsplanner5000;
 public class Main {
     public static void main (String[] args){
     
-    System.out.println("Hallo Velo");
+    System.out.println("Hallo Simon");
     }
 }
