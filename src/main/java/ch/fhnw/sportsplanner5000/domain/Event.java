@@ -41,7 +41,7 @@ public class Event implements Serializable {
     private String eventname;
     @Column(nullable =false) // NOT NULL
     private String typ;
-    
+
     @OneToOne
     @JoinColumn(name= "address_fk")
     @Column(table ="t_place")
@@ -55,6 +55,31 @@ public class Event implements Serializable {
         this.id = id;
     }
 
+    public String getEventname() {
+        return eventname;
+    }
+
+    public void setEventname(String eventname) {
+        this.eventname = eventname;
+    }
+
+    public String getTyp() {
+        return typ;
+    }
+
+    public void setTyp(String typ) {
+        this.typ = typ;
+    }
+
+    public String getPlace() {
+        return place;
+    }
+
+    public void setPlace(String place) {
+        this.place = place;
+    }
+    
+    
     @Override
     public int hashCode() {
         int hash = 0;
