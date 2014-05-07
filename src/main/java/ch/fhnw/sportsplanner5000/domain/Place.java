@@ -7,6 +7,7 @@
 package ch.fhnw.sportsplanner5000.domain;
 
 import java.io.Serializable;
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -24,6 +25,13 @@ public class Place implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
+    
+    @Column(nullable =false) // NOT NULL
+    private String place;
+    @Column(nullable =false) // NOT NULL
+    private String placename;
+    @Column(length =2000) // Give a length
+    private String description;
 
     public Long getId() {
         return id;
